@@ -233,9 +233,28 @@ p {
 }
 
 .carousel-products {
-  display: grid;
-  grid-template-columns: repeat(3, 286px);
+  overflow: hidden;
+  padding: 28px 0;
+  margin: -28px 0;
+}
+
+.carousel-track {
+  display: flex;
   gap: 32px;
+}
+
+.carousel-track .product-card {
+  flex-shrink: 0;
+}
+
+.carousel-track.moving {
+  transition: transform 350ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track.moving {
+    transition-duration: 1ms;
+  }
 }
 
 .carousel-arrow {
