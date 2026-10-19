@@ -1,0 +1,97 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.add-book-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.add-book-form input {
+  flex: 1;
+  min-width: 150px;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-book-form button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-book-form button:hover {
+  background-color: #218838;
+}
+
+.tree-root {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.tree-children {
+  list-style: none;
+  padding-left: 24px;
+  margin: 0;
+  border-left: 2px solid #e9ecef;
+}
+
+.tree-node {
+  margin: 4px 0;
+}
+
+.tree-node-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.tree-node-content.clickable {
+  cursor: pointer;
+}
+
+.tree-node-content.clickable:hover {
+  background-color: #e9ecef;
+}
+
+.tree-icon {
+  width: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.tree-type {
+  font-size: 12px;
+  color: #6c757d;
+  text-transform: uppercase;
+  min-width: 90px;
+}
+
+.tree-name {
+  font-weight: 500;
+  color: #212529;
+}
+
+.tree-node-content.expanded .tree-name {
+  font-weight: 700;
+  color: #0056b3;
+}
